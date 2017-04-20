@@ -1,23 +1,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
+    $(function(){
         var get1 = $("#textInputOne").val();
         var get2 = $("#textInputTwo").val();
-        var a = $("button.a");
-        var s = $("button.s");
-        var m = $("button.m");
-        var d = $("button.d");
+        var a = $(".a");
+        var s = $(".s");
+        var m = $(".m");
+        var d = $(".d");
         var ans = $(".ans");
-        a.on("click", function(){
+        a.click(function(){
             ans.text(Number(get1 + get2));
         });
-        s.on("click", function(){
+        s.click(function(){
             ans.text(Number(get1 - get2));
         });
-        m.on("click", function(){
+        m.click(function(){
             ans.text(Number(get1 * get2));
         });
-        d.on("click", function(){
+        d.click(function(){
             ans.text(Number(get1 / get2));
         });
     });
