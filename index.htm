@@ -1,31 +1,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
     $(function(){
-        function calc(){
-            var get1 = $("#textInputOne");
-            var get2 = $("#textInputTwo");
-            var a = $(".a");
-            var s = $(".s");
-            var m = $(".m");
-            var d = $(".d");
-            var ans = $(".ans");
-            a.click(function(){
-                ans.html(Number(get1 + get2));
-            });
-            s.click(function(){
-                ans.html(Number(get1 - get2));
-            });
-            m.click(function(){
-                ans.html(Number(get1 * get2));
-            });
-            d.click(function(){
-                ans.html(Number(get1 / get2));
-            });
-        }
+        var get1 = $("#textInputOne");
+        var get2 = $("#textInputTwo");
+        var a = $(".a");
+        var s = $(".s");
+        var m = $(".m");
+        var d = $(".d");
+        var ans = $(".ans");
+        a.click(function(){
+            ans.html(Number(get1 + get2));
+        });
+        s.click(function(){
+            ans.html(Number(get1 - get2));
+        });
+        m.click(function(){
+            ans.html(Number(get1 * get2));
+        });
+        d.click(function(){
+            ans.html(Number(get1 / get2));
+        });
     }
 </script>
-<input id="textInputOne" type="number" name="inputOne" />
-<input id="textInputTwo" type="number" name="inputTwo" />
+<input id="textInputOne" type="number" name="inputOne" /><br />
+<input id="textInputTwo" type="number" name="inputTwo" /><br />
 <button class="a">Addition</button>
 <button class="s">Subtraction</button>
 <button class="m">Multiplication</button>
