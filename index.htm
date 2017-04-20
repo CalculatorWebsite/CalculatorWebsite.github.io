@@ -1,6 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    $(function(){
+    $(document).ready(function(){
         var get1 = $("#textInputOne").val();
         var get2 = $("#textInputTwo").val();
         var a = $("button.a");
@@ -20,7 +20,7 @@
         d.on("click", function(){
             ans.text(Number(get1 / get2));
         });
-    }
+    });
 </script>
 <input id="textInputOne" type="number" name="inputOne" /><br />
 <input id="textInputTwo" type="number" name="inputTwo" /><br />
