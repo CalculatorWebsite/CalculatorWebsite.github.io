@@ -3,21 +3,21 @@
     $(function(){
         var get1 = $("#textInputOne").val();
         var get2 = $("#textInputTwo").val();
-        var a = $(".a");
-        var s = $(".s");
-        var m = $(".m");
-        var d = $(".d");
+        var a = $("button.a");
+        var s = $("button.s");
+        var m = $("button.m");
+        var d = $("button.d");
         var ans = $(".ans");
-        a.click(function(){
+        a.on("click", function(){
             ans.text(Number(get1 + get2));
         });
-        s.click(function(){
+        s.on("click", function(){
             ans.text(Number(get1 - get2));
         });
-        m.click(function(){
+        m.on("click", function(){
             ans.text(Number(get1 * get2));
         });
-        d.click(function(){
+        d.on("click", function(){
             ans.text(Number(get1 / get2));
         });
     }
